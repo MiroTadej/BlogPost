@@ -1,0 +1,12 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+crazy_task:
+  title: Hello crazy rails
+  body: To much work
+  published: false
+
+fun_task:
+  title: Rails is fun
+  body: Rails is fun when you have more time
+  published: false
+

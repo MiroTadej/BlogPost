@@ -1,0 +1,24 @@
+<div class="container">
+  <nav class="navbar fixed-top navbar-dark bg-primary">
+    <h1 class="navbar-text text-center">
+      BLOG POST
+      <small class="text-muted">Powered by Rails</small>      
+    </h1>
+  </nav>
+</div>
+<p style="color: green"><%= notice %></p>
+<div class="container pt-5 mt-5">
+<%= render @article %>
+
+  <div class="container pt-5 mt-5">
+    <ul class="list-inline">
+      <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: "btn btn-warning" %></li>
+      <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {turbo_method: :delete, 
+      turbo_confirm: "Are you sure?"}, class: "btn btn-danger" %></li>
+    </ul>
+
+    <%= link_to 'Back', articles_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
+
+
